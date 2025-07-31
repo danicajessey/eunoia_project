@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* General Utility Classes */
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+.kiri {
+  text-align: left;
+}
+
+/* Button Styling    */
+a.btn-catalog {
+  background: #F3D0D7;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 30px 80px;
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+a.btn-catalog:hover {
+  background: #B5828C;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Text & Typography     */
+p {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.kolom .deskripsi {
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+  color: #FCD1D1;
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+/* MAIN SECTION: Full Background */
+section#home {
+  position: relative;
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* ✅ Overlay gelap transparan */
+section#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Hitam transparan */
+  z-index: 1;
+}
+
+.kolom {
+  position: relative;
+  z-index: 2;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 991.98px) {
+  section#home {
+    justify-content: center;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .kiri {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .kolom .deskripsi {
+    font-size: 36px; /* Ukuran lebih kecil di mobile */
+  }
+
+  a.btn-catalog {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
