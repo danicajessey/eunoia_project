@@ -1,0 +1,121 @@
+body{
+    min-height: 100dvh;
+    padding-bottom: 100px;
+    margin: 0;
+    background: #FFEFEF;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 60px; 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 70px;
+    width: 590px;
+    border-radius: 40px;
+    background: #FFEFEF;
+    padding-bottom: 25px;
+    border-color: #541C2D;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text {
+    margin-top: 35px;
+    color: #541C2D;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.inputs{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background-color: #FFEFEF;
+    border: 1.5px solid #541C2D;
+    border-radius: 20px;
+    
+}
+
+.input input{
+    height: 25px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 45px;
+}
+.submit-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 60px auto;
+}
+.lostpass{
+    padding-left: 65px;
+    margin-top: 27px;
+    color: #541C2D;
+    font-size: 20px;
+}
+.lostpass span{
+    color: #160108;
+    cursor: pointer;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 70px;
+    color: #FFC9D3;
+    background: #541C2D;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.white{
+    background: #fff;
+    color: #541C2D;
+    border: 2px solid #541C2D ;
+}
+.password-input {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+  color: #541C2D;
+  font-weight: bold;
+}

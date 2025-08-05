@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-left">
           <h2>Eunoia</h2>
-          <p>Copyright Mary & Jessey</p>
+          <p>&#169; Mary & Jessey</p>
         </div>
         <div className="footer-right">
           <ul>

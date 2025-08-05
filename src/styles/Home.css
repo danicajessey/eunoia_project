@@ -15,13 +15,14 @@
 a.btn-catalog {
   background: #F3D0D7;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 7px;
   padding: 30px 80px;
   font-size: 25px;
   color: #000;
   cursor: pointer;
   font-weight: bold;
   display: inline-block;
+  margin-left: 20px;
   transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -30,6 +31,7 @@ a.btn-catalog:hover {
   border-radius: 40px;
   text-decoration: none;
   color: #fff;
+  
 }
 
 /* Text & Typography     */
@@ -38,16 +40,17 @@ p {
   padding: 10px 0;
 }
 
-.kolom .deskripsi {
+.describe .deskripsihome {
   font-family: 'Poppins', sans-serif;
-  font-size: 80px;
+  font-size: 70px;
   color: #FCD1D1;
   position: relative;
   z-index: 2;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+  margin-left: 20px;
+  
 }
 
-/* MAIN SECTION: Full Background */
 section#home {
   position: relative;
   height: 100vh;
@@ -63,7 +66,6 @@ section#home {
   z-index: 0;
 }
 
-/* ✅ Overlay gelap transparan */
 section#home::before {
   content: "";
   position: absolute;
@@ -75,9 +77,54 @@ section#home::before {
   z-index: 1;
 }
 
+.describe {
+  position: relative;
+  z-index: 2;
+}
+
 .kolom {
   position: relative;
   z-index: 2;
+}
+section#about h2 {
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+}
+
+section#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 100px;
+  gap: 50px;
+}
+.about-content-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  width: 100%;
+  max-width: 1200px;
+}
+.kolom .deskripsiabout {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: #B5828C;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+}
+
+section#about .kolom {
+  flex: 1;
+}
+
+section#about img {
+flex-shrink: 0;
+max-width: 45%;
+border-radius: 30px;
+box-shadow: 0 4px 20px #E5989B
 }
 
 /* RESPONSIVE STYLES */
@@ -95,11 +142,150 @@ section#home::before {
   }
 
   .kolom .deskripsi {
-    font-size: 36px; /* Ukuran lebih kecil di mobile */
+    font-size: 36px; 
   }
 
   a.btn-catalog {
-    padding: 10px 16px;
-    font-size: 14px;
+    padding: 20px 20;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .about-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  section#about img {
+    max-width: 100%;
+  }
+
+  section#about .kolom {
+    width: 100%;
+  }
+
+  .kolom .deskripsiabout {
+    font-size: 25px;
+  }
+
+  section#about h2 {
+    font-size: 35px;
+  }
+}
+
+.contact-section {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 20px solid #f3d0d7; 
+  
+}
+
+.contact-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form-container {
+  width: 100%;
+  max-width: 1000px; 
+  background-color: absolute;
+  border-radius: 25px; 
+  box-shadow: 0 4px 15px #E5989B;
+  padding: 40px;
+  border: 3px solid #f3d0d7;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-input,
+.contact-textarea {
+  width: 95%;
+  padding: 15px 25px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border: 1px solid #f3d0d7; 
+  border-radius: 15px; 
+  background-color: absolute;
+  color: #E5989B;
+}
+.contact-input:focus,
+.contact-textarea:focus {
+  outline: #E5989B;
+  border-color: #B5828C;
+  border: 3 px solid;
+}
+.input-row .contact-input {
+  flex: 1;
+}
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  color: #140205;
+  opacity: 2;
+}
+
+.contact-textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+.submit-btn {
+  margin: 0;
+  width: 100%;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #B5828C; 
+  background-color: #fff8f8; 
+  border: 1px solid #dac0c1; 
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #f3d0d7;
+  color: #E5989B;
+  border:  1px solid;
+}
+
+/* RESPONSIVE STYLES FOR CONTACT FORM */
+@media screen and (max-width: 991.98px) {
+  .contact-form-container {
+    padding: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .input-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-input,
+  .contact-textarea {
+    padding: 12px 20px;
+  }
+  
+  .submit-btn {
+    padding: 15px 0;
+    font-size: 18px;
   }
 }
