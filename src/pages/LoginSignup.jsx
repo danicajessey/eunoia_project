@@ -41,7 +41,7 @@ const LoginSignup = () => {
 
         {action === "Login" && (
           <div className="lostpass">
-            Forgot Password? <span>Click Here!</span>
+            Forgot Password? <span> Click Here!</span>
           </div>
         )}
 

@@ -4,6 +4,7 @@ import bghome from "../assets/images/bghome.png";
 import "../styles/Home.css";
 import about from "../assets/images/about.png";
 
+
 function Home() {
   return (
     <>
