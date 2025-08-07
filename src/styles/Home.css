@@ -2,6 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* General Utility Classes */
+
+html,body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content-wrapper {
+  flex: 1;
+}
+
+
 .tengah {
   text-align: center;
   width: 100%;
@@ -31,7 +45,6 @@ a.btn-catalog:hover {
   border-radius: 40px;
   text-decoration: none;
   color: #fff;
-  
 }
 
 /* Text & Typography     */
@@ -180,8 +193,7 @@ box-shadow: 0 4px 20px #E5989B
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 20px solid #f3d0d7; 
-  
+  border-bottom: 20px solid #f3d0d7;
 }
 
 .contact-title {
@@ -196,7 +208,7 @@ box-shadow: 0 4px 20px #E5989B
 .contact-form-container {
   width: 100%;
   max-width: 1000px; 
-  background-color: absolute;
+  background-color: transparent;
   border-radius: 25px; 
   box-shadow: 0 4px 15px #E5989B;
   padding: 40px;
@@ -213,7 +225,6 @@ box-shadow: 0 4px 20px #E5989B
   display: flex;
   gap: 20px;
 }
-
 .contact-input,
 .contact-textarea {
   width: 95%;
@@ -222,8 +233,8 @@ box-shadow: 0 4px 20px #E5989B
   font-size: 16px;
   border: 1px solid #f3d0d7; 
   border-radius: 15px; 
-  background-color: absolute;
-  color: #E5989B;
+  background-color: #fff8f8; 
+  color: #541C2D;
 }
 .contact-input:focus,
 .contact-textarea:focus {
@@ -275,7 +286,7 @@ box-shadow: 0 4px 20px #E5989B
   }
   
   .input-row {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
   }
   
