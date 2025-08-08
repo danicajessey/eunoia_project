@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import bghome from "../assets/images/bghome.png";
 import "../styles/Home.css";
 import about from "../assets/images/about.png";
+import Catalog from "../pages/Catalog";
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -26,7 +28,7 @@ function Home() {
             <br />
             Touch of Cuteness
           </p>
-          <a href="#catalog" className="btn-catalog">
+          <a href="/catalog" className="btn-catalog">
             Catalog
           </a>
         </div>

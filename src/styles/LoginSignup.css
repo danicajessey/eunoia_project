@@ -23,7 +23,7 @@ body::after {
     border-color: #541C2D;
     border-style: solid;
     border-width: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     box-shadow: 3px 10px 20px #541C2D;
 }
 
@@ -78,13 +78,13 @@ body::after {
     gap: 30px;
     margin: 60px auto;
 }
-.lostpass{
+.forgotpassword{
     padding-left: 65px;
     margin-top: 27px;
     color: #541C2D;
     font-size: 20px;
 }
-.lostpass span{
+.forgotpassword span{
     color: #ad043d;
     cursor: pointer;
 }
@@ -119,4 +119,35 @@ body::after {
   font-size: 14px;
   color: #541C2D;
   font-weight: bold;
+}
+.forgotpassform {
+    cursor: pointer;
+    color: blue;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-bottom: 15px;
+}
+
+.forgotpassform input {
+    font-size: 20px;
+    color: #541C2D;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #541C2D;
+    border-radius: 10px ;
+    width: 80%;
+    height: 40px;
+}
+.forgotpassform button {
+    font-size: 14px;
+    color: #FFC9D3;
+    background: #541C2D;
+    width: 200px;
+    height: 60px;
+    margin: 10px auto;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 130px;
+    border-radius: 20px;
 }

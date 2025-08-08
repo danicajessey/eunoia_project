@@ -9,8 +9,8 @@ function Navbar() {
             <div className="menu">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#contact">Contact</a></li>
                     <li><Link to="/login" className="btn-login">Login</Link></li>
                 </ul>
             </div>
