@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-weight: 500;
 }
 
@@ -60,7 +60,7 @@
 
   .footer-right {
     flex: 1;
-    margin-top: 200px;
+    margin-top: 70px;
   }
 
   .footer-right li {
