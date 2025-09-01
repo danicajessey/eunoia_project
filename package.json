@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy":"vite build && rimraf docs && copyfiles -u 1 dist/**/* docs",
+    "predeploy":"npm run build && cp dist/index.html dist/404.html",
+    "deploy":"gh-pages -d dist",
     "dev":"vite",
     "build": "vite build",
     "lint": "eslint .",
